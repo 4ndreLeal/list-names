@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+  <head> </head>
+  <body>
+    <center><h1>Lista de nomes</h1></center>
+    <ul id="myList"></ul>
+    <script>
+      let nomes = ["André", "Luciana", "Daniel", "Manoel"];
+  
+      let list = document.getElementById("myList");
+  
+      nomes.forEach((nome) => {
+        let newList = document.createElement("li");
+        newList.innerText = nome;
+        list.appendChild(newList);
+      });
+    </script>
+  </body>
+</html>
